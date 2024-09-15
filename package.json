@@ -1,10 +1,13 @@
 {
+  "homepage":"https://saravan-patidar.github.io/Currency_converter",
   "name": "currency-converter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predepoly":"npm run build",
+    "depoly":"gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
